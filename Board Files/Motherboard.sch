@@ -59,22 +59,11 @@ F 3 "~" H 10300 8350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	15300 13250 15300 13350
-Wire Wire Line
 	10450 8350 10600 8350
 Wire Wire Line
 	10600 8350 10600 8450
-Wire Wire Line
-	15750 13350 15300 13350
-Connection ~ 15300 13350
-Wire Wire Line
-	15300 13350 15300 13450
-Text Label 15300 13350 0    50   ~ 0
-EXP-VIDEO
 Text Label 10900 8350 2    50   ~ 0
 VIDEO
-Text Label 27200 9500 1    50   ~ 0
-VCC
 Text Label 10600 9400 1    50   ~ 0
 GND
 $Comp
@@ -128,7 +117,7 @@ PPU-~RD
 Text Label 9850 7400 2    50   ~ 0
 PPU-~WE
 Text Label 9850 7500 2    50   ~ 0
-~RST
+VCC
 Wire Wire Line
 	9450 5700 9850 5700
 Wire Wire Line
@@ -826,182 +815,6 @@ Wire Wire Line
 Text Notes 9750 800  0    50   ~ 10
 CENTRAL PROCESSING UNIT & WORK RAM
 $Comp
-L Motherboard:Controller_Port Controller_Port_1
-U 1 1 5DCEA036
-P 1350 1650
-F 0 "Controller_Port_1" H 1350 2000 50  0000 C CNN
-F 1 "Joystick_I" H 1250 1400 50  0000 C CNN
-F 2 "" H 1350 1650 50  0001 C CNN
-F 3 "" H 1350 1650 50  0001 C CNN
-	1    1350 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D6
-U 1 1 5DCEB207
-P 2550 1150
-F 0 "D6" H 2700 1200 50  0000 C CNN
-F 1 "?" H 2800 1200 50  0000 C CNN
-F 2 "" H 2550 1150 50  0001 C CNN
-F 3 "~" H 2550 1150 50  0001 C CNN
-	1    2550 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D7
-U 1 1 5DCFA2BD
-P 2550 1250
-F 0 "D7" H 2700 1300 50  0000 C CNN
-F 1 "?" H 2800 1300 50  0000 C CNN
-F 2 "" H 2550 1250 50  0001 C CNN
-F 3 "~" H 2550 1250 50  0001 C CNN
-	1    2550 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D8
-U 1 1 5DD0608E
-P 2550 1350
-F 0 "D8" H 2700 1400 50  0000 C CNN
-F 1 "?" H 2800 1400 50  0000 C CNN
-F 2 "" H 2550 1350 50  0001 C CNN
-F 3 "~" H 2550 1350 50  0001 C CNN
-	1    2550 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D5
-U 1 1 5DD11E28
-P 2550 1450
-F 0 "D5" H 2700 1500 50  0000 C CNN
-F 1 "?" H 2800 1500 50  0000 C CNN
-F 2 "" H 2550 1450 50  0001 C CNN
-F 3 "~" H 2550 1450 50  0001 C CNN
-	1    2550 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D3
-U 1 1 5DD1DB5E
-P 2550 1550
-F 0 "D3" H 2400 1500 50  0000 C CNN
-F 1 "?" H 2300 1500 50  0000 C CNN
-F 2 "" H 2550 1550 50  0001 C CNN
-F 3 "~" H 2550 1550 50  0001 C CNN
-	1    2550 1550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D D4
-U 1 1 5DD373B6
-P 2550 1650
-F 0 "D4" H 2400 1600 50  0000 C CNN
-F 1 "?" H 2300 1600 50  0000 C CNN
-F 2 "" H 2550 1650 50  0001 C CNN
-F 3 "~" H 2550 1650 50  0001 C CNN
-	1    2550 1650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2400 1650 2300 1650
-Wire Wire Line
-	2400 1550 2200 1550
-Wire Wire Line
-	2400 1450 2100 1450
-Wire Wire Line
-	2100 1450 2100 2000
-Wire Wire Line
-	1700 1550 2000 1550
-Wire Wire Line
-	2000 1550 2000 1350
-Wire Wire Line
-	2000 1350 2400 1350
-Wire Wire Line
-	1700 1650 1900 1650
-Wire Wire Line
-	1900 1650 1900 1250
-Wire Wire Line
-	1900 1250 2400 1250
-Wire Wire Line
-	1700 1750 1800 1750
-Wire Wire Line
-	1800 1750 1800 1150
-Wire Wire Line
-	1800 1150 2400 1150
-Wire Wire Line
-	1000 1750 900  1750
-Wire Wire Line
-	900  1750 900  2000
-Wire Wire Line
-	900  2000 2100 2000
-Wire Wire Line
-	2200 2100 800  2100
-Wire Wire Line
-	800  2100 800  1650
-Wire Wire Line
-	800  1650 1000 1650
-Wire Wire Line
-	2200 1550 2200 2100
-Wire Wire Line
-	1000 1550 700  1550
-Wire Wire Line
-	700  1550 700  2200
-Wire Wire Line
-	700  2200 2300 2200
-Wire Wire Line
-	2300 1650 2300 1950
-$Comp
-L Device:C_Small C47
-U 1 1 5DDF1DB2
-P 2550 1950
-F 0 "C47" V 2700 1950 50  0000 C CNN
-F 1 "(Unused)" V 2400 1950 50  0000 C CNN
-F 2 "" H 2550 1950 50  0001 C CNN
-F 3 "~" H 2550 1950 50  0001 C CNN
-	1    2550 1950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2300 1950 2450 1950
-Connection ~ 2300 1950
-Wire Wire Line
-	2300 1950 2300 2200
-$Comp
-L Connector:Conn_01x07_Male J1
-U 1 1 5DE14042
-P 3100 1450
-F 0 "J1" H 3200 1000 50  0000 C CNN
-F 1 "Controller Output" V 3000 1450 50  0000 C CNN
-F 2 "" H 3100 1450 50  0001 C CNN
-F 3 "~" H 3100 1450 50  0001 C CNN
-	1    3100 1450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2700 1150 2900 1150
-Wire Wire Line
-	2700 1250 2900 1250
-Wire Wire Line
-	2700 1350 2900 1350
-Wire Wire Line
-	2700 1450 2900 1450
-Wire Wire Line
-	2700 1550 2900 1550
-Wire Wire Line
-	2700 1650 2900 1650
-Wire Wire Line
-	2900 1750 2800 1750
-Wire Wire Line
-	2800 1750 2800 1950
-Wire Wire Line
-	2800 2200 2300 2200
-Connection ~ 2300 2200
-Wire Wire Line
-	2650 1950 2800 1950
-Connection ~ 2800 1950
-Wire Wire Line
-	2800 1950 2800 2200
-$Comp
 L Motherboard:72-Pin_Connector P1
 U 1 1 5D838060
 P 14250 2850
@@ -1388,10 +1201,10 @@ Wire Wire Line
 Wire Wire Line
 	3800 1650 4900 1650
 $Comp
-L Device:C_Small C37
+L Device:C_Small C20
 U 1 1 5EE0FC17
 P 5700 1900
-F 0 "C37" V 5600 1600 50  0000 L CNN
+F 0 "C20" V 5600 1600 50  0000 L CNN
 F 1 "330pF" V 5600 1800 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5700 1900 50  0001 C CNN
 F 3 "~" H 5700 1900 50  0001 C CNN
@@ -1399,10 +1212,10 @@ F 3 "~" H 5700 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C36
+L Device:C_Small C19
 U 1 1 5EDDFFA6
 P 5500 1900
-F 0 "C36" V 5400 1600 50  0000 L CNN
+F 0 "C19" V 5400 1600 50  0000 L CNN
 F 1 "330pF" V 5400 1800 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5500 1900 50  0001 C CNN
 F 3 "~" H 5500 1900 50  0001 C CNN
@@ -1410,10 +1223,10 @@ F 3 "~" H 5500 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C35
+L Device:C_Small C17
 U 1 1 5EDB040F
 P 5300 1900
-F 0 "C35" V 5200 1600 50  0000 L CNN
+F 0 "C17" V 5200 1600 50  0000 L CNN
 F 1 "330pF" V 5200 1800 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5300 1900 50  0001 C CNN
 F 3 "~" H 5300 1900 50  0001 C CNN
@@ -1421,10 +1234,10 @@ F 3 "~" H 5300 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C34
+L Device:C_Small C16
 U 1 1 5ED808EC
 P 5100 1900
-F 0 "C34" V 5000 1600 50  0000 L CNN
+F 0 "C16" V 5000 1600 50  0000 L CNN
 F 1 "330pF" V 5000 1800 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5100 1900 50  0001 C CNN
 F 3 "~" H 5100 1900 50  0001 C CNN
@@ -1452,10 +1265,10 @@ Wire Wire Line
 Text Label 4900 2300 1    50   ~ 0
 GND
 $Comp
-L Device:C_Small C33
+L Device:C_Small C15
 U 1 1 5ECEC324
 P 4900 1900
-F 0 "C33" V 4800 1600 50  0000 L CNN
+F 0 "C15" V 4800 1600 50  0000 L CNN
 F 1 "330pF" V 4800 1800 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4900 1900 50  0001 C CNN
 F 3 "~" H 4900 1900 50  0001 C CNN
@@ -1508,171 +1321,6 @@ Text Label 6300 1650 2    50   ~ 0
 Text Label 6300 1750 2    50   ~ 0
 GND
 $Comp
-L Motherboard:Controller_Port Controller_Port_2
-U 1 1 5F41BB80
-P 1350 3350
-F 0 "Controller_Port_2" H 1350 3700 50  0000 C CNN
-F 1 "Joystick_II" H 1250 3100 50  0000 C CNN
-F 2 "" H 1350 3350 50  0001 C CNN
-F 3 "" H 1350 3350 50  0001 C CNN
-	1    1350 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D12
-U 1 1 5F41BB86
-P 2550 2850
-F 0 "D12" H 2700 2900 50  0000 C CNN
-F 1 "?" H 2800 2900 50  0000 C CNN
-F 2 "" H 2550 2850 50  0001 C CNN
-F 3 "~" H 2550 2850 50  0001 C CNN
-	1    2550 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D13
-U 1 1 5F41BB8C
-P 2550 2950
-F 0 "D13" H 2700 3000 50  0000 C CNN
-F 1 "?" H 2800 3000 50  0000 C CNN
-F 2 "" H 2550 2950 50  0001 C CNN
-F 3 "~" H 2550 2950 50  0001 C CNN
-	1    2550 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D14
-U 1 1 5F41BB92
-P 2550 3050
-F 0 "D14" H 2700 3100 50  0000 C CNN
-F 1 "?" H 2800 3100 50  0000 C CNN
-F 2 "" H 2550 3050 50  0001 C CNN
-F 3 "~" H 2550 3050 50  0001 C CNN
-	1    2550 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D11
-U 1 1 5F41BB98
-P 2550 3150
-F 0 "D11" H 2700 3200 50  0000 C CNN
-F 1 "?" H 2800 3200 50  0000 C CNN
-F 2 "" H 2550 3150 50  0001 C CNN
-F 3 "~" H 2550 3150 50  0001 C CNN
-	1    2550 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D10
-U 1 1 5F41BBA4
-P 2550 3350
-F 0 "D10" H 2400 3300 50  0000 C CNN
-F 1 "?" H 2300 3300 50  0000 C CNN
-F 2 "" H 2550 3350 50  0001 C CNN
-F 3 "~" H 2550 3350 50  0001 C CNN
-	1    2550 3350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2400 3350 2300 3350
-Wire Wire Line
-	2400 3250 2200 3250
-Wire Wire Line
-	2400 3150 2100 3150
-Wire Wire Line
-	2100 3150 2100 3700
-Wire Wire Line
-	1700 3250 2000 3250
-Wire Wire Line
-	2000 3250 2000 3050
-Wire Wire Line
-	2000 3050 2400 3050
-Wire Wire Line
-	1700 3350 1900 3350
-Wire Wire Line
-	1900 3350 1900 2950
-Wire Wire Line
-	1900 2950 2400 2950
-Wire Wire Line
-	1700 3450 1800 3450
-Wire Wire Line
-	1800 3450 1800 2850
-Wire Wire Line
-	1800 2850 2400 2850
-Wire Wire Line
-	1000 3450 900  3450
-Wire Wire Line
-	900  3450 900  3700
-Wire Wire Line
-	900  3700 2100 3700
-Wire Wire Line
-	2200 3800 800  3800
-Wire Wire Line
-	800  3800 800  3350
-Wire Wire Line
-	800  3350 1000 3350
-Wire Wire Line
-	2200 3250 2200 3800
-Wire Wire Line
-	1000 3250 700  3250
-Wire Wire Line
-	700  3250 700  3900
-Wire Wire Line
-	700  3900 2300 3900
-Wire Wire Line
-	2300 3350 2300 3650
-$Comp
-L Device:C_Small C48
-U 1 1 5F41BBC2
-P 2550 3650
-F 0 "C48" V 2700 3650 50  0000 C CNN
-F 1 "(Unused)" V 2400 3650 50  0000 C CNN
-F 2 "" H 2550 3650 50  0001 C CNN
-F 3 "~" H 2550 3650 50  0001 C CNN
-	1    2550 3650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2300 3650 2450 3650
-Connection ~ 2300 3650
-Wire Wire Line
-	2300 3650 2300 3900
-$Comp
-L Connector:Conn_01x07_Male J2
-U 1 1 5F41BBCB
-P 3100 3150
-F 0 "J2" H 3200 2700 50  0000 C CNN
-F 1 "Controller Output" V 3000 3150 50  0000 C CNN
-F 2 "" H 3100 3150 50  0001 C CNN
-F 3 "~" H 3100 3150 50  0001 C CNN
-	1    3100 3150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2700 2850 2900 2850
-Wire Wire Line
-	2700 2950 2900 2950
-Wire Wire Line
-	2700 3050 2900 3050
-Wire Wire Line
-	2700 3150 2900 3150
-Wire Wire Line
-	2700 3250 2900 3250
-Wire Wire Line
-	2700 3350 2900 3350
-Wire Wire Line
-	2900 3450 2800 3450
-Wire Wire Line
-	2800 3450 2800 3650
-Wire Wire Line
-	2800 3900 2300 3900
-Connection ~ 2300 3900
-Wire Wire Line
-	2650 3650 2800 3650
-Connection ~ 2800 3650
-Wire Wire Line
-	2800 3650 2800 3900
-$Comp
 L Connector:Conn_01x07_Female P5
 U 1 1 5F41BBDE
 P 3450 3150
@@ -1714,10 +1362,10 @@ GND
 Wire Wire Line
 	4250 4000 4250 3700
 $Comp
-L Device:C_Small C31
+L Device:C_Small C26
 U 1 1 5F41BC10
 P 5700 3600
-F 0 "C31" V 5600 3300 50  0000 L CNN
+F 0 "C26" V 5600 3300 50  0000 L CNN
 F 1 "330pF" V 5600 3500 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5700 3600 50  0001 C CNN
 F 3 "~" H 5700 3600 50  0001 C CNN
@@ -1725,10 +1373,10 @@ F 3 "~" H 5700 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C30
+L Device:C_Small C25
 U 1 1 5F41BC16
 P 5500 3600
-F 0 "C30" V 5400 3300 50  0000 L CNN
+F 0 "C25" V 5400 3300 50  0000 L CNN
 F 1 "330pF" V 5400 3500 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5500 3600 50  0001 C CNN
 F 3 "~" H 5500 3600 50  0001 C CNN
@@ -1736,10 +1384,10 @@ F 3 "~" H 5500 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C29
+L Device:C_Small C23
 U 1 1 5F41BC1C
 P 5300 3600
-F 0 "C29" V 5200 3300 50  0000 L CNN
+F 0 "C23" V 5200 3300 50  0000 L CNN
 F 1 "330pF" V 5200 3500 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5300 3600 50  0001 C CNN
 F 3 "~" H 5300 3600 50  0001 C CNN
@@ -1747,10 +1395,10 @@ F 3 "~" H 5300 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C28
+L Device:C_Small C22
 U 1 1 5F41BC22
 P 5100 3600
-F 0 "C28" V 5000 3300 50  0000 L CNN
+F 0 "C22" V 5000 3300 50  0000 L CNN
 F 1 "330pF" V 5000 3500 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5100 3600 50  0001 C CNN
 F 3 "~" H 5100 3600 50  0001 C CNN
@@ -1778,10 +1426,10 @@ Wire Wire Line
 Text Label 4900 4000 1    50   ~ 0
 GND
 $Comp
-L Device:C_Small C27
+L Device:C_Small C21
 U 1 1 5F41BC32
 P 4900 3600
-F 0 "C27" V 4800 3300 50  0000 L CNN
+F 0 "C21" V 4800 3300 50  0000 L CNN
 F 1 "330pF" V 4800 3500 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4900 3600 50  0001 C CNN
 F 3 "~" H 4900 3600 50  0001 C CNN
@@ -1814,17 +1462,6 @@ Text Label 6300 3350 2    50   ~ 0
 ~OE2
 Text Label 6300 3450 2    50   ~ 0
 GND
-$Comp
-L Device:D D9
-U 1 1 5F41BB9E
-P 2550 3250
-F 0 "D9" H 2400 3200 50  0000 C CNN
-F 1 "?" H 2300 3200 50  0000 C CNN
-F 2 "" H 2550 3250 50  0001 C CNN
-F 3 "~" H 2550 3250 50  0001 C CNN
-	1    2550 3250
-	-1   0    0    1   
-$EndComp
 $Comp
 L Motherboard:74HC368 U7
 U 1 1 5FA4F885
@@ -2023,116 +1660,6 @@ Text Label 8800 4100 1    50   ~ 0
 Wire Wire Line
 	8800 4100 8800 3800
 $Comp
-L Device:C_Small C42
-U 1 1 5DBF1D97
-P -3950 11200
-F 0 "C42" H -4100 11150 50  0000 R CNN
-F 1 "15pF" H -4100 11250 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H -3950 11200 50  0001 C CNN
-F 3 "~" H -3950 11200 50  0001 C CNN
-	1    -3950 11200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	-4050 10950 -3950 10950
-Wire Wire Line
-	-3950 10950 -3950 11100
-Connection ~ -3950 10950
-Text Label -2650 11450 1    50   ~ 0
-GND
-Wire Wire Line
-	-2650 11450 -2650 11150
-Wire Wire Line
-	-2650 10750 -2650 10600
-Wire Wire Line
-	-2650 10600 -3950 10600
-Wire Wire Line
-	-3950 10600 -3950 10950
-$Comp
-L Device:R R11
-U 1 1 5E15619D
-P -2650 10350
-F 0 "R11" H -2580 10396 50  0000 L CNN
-F 1 "1.2K" H -2580 10305 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V -2720 10350 50  0001 C CNN
-F 3 "~" H -2650 10350 50  0001 C CNN
-	1    -2650 10350
-	1    0    0    -1  
-$EndComp
-Text Label -2650 9950 3    50   ~ 0
-VCC
-Wire Wire Line
-	-2650 9950 -2650 10200
-Wire Wire Line
-	-2650 10500 -2650 10600
-Connection ~ -2650 10600
-Text Label -3950 11650 1    50   ~ 0
-GND
-$Comp
-L Device:R R10
-U 1 1 5E28B65B
-P -2650 11650
-F 0 "R10" V -2550 11700 50  0000 L CNN
-F 1 "220K" V -2550 11450 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V -2720 11650 50  0001 C CNN
-F 3 "~" H -2650 11650 50  0001 C CNN
-	1    -2650 11650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	-2950 11650 -2800 11650
-$Comp
-L Device:C_Small C45
-U 1 1 5E429BDB
-P -2250 11650
-F 0 "C45" V -2021 11650 50  0000 C CNN
-F 1 "51pF" V -2112 11650 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H -2250 11650 50  0001 C CNN
-F 3 "~" H -2250 11650 50  0001 C CNN
-	1    -2250 11650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C_Small C43
-U 1 1 5E703511
-P -2950 12200
-F 0 "C43" H -2750 12150 50  0000 C CNN
-F 1 "51pF" H -2750 12250 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H -2950 12200 50  0001 C CNN
-F 3 "~" H -2950 12200 50  0001 C CNN
-	1    -2950 12200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 5EC660D3
-P -3600 12200
-F 0 "R13" V -3700 12050 50  0000 L CNN
-F 1 "1.2K" V -3700 12250 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V -3670 12200 50  0001 C CNN
-F 3 "~" H -3600 12200 50  0001 C CNN
-	1    -3600 12200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	-2950 11650 -2950 12100
-Wire Wire Line
-	-3600 12050 -3600 11950
-Text Label -3600 12650 1    50   ~ 0
-GND
-Wire Wire Line
-	-3600 12650 -3600 12350
-Text Label -2950 12650 1    50   ~ 0
-GND
-Wire Wire Line
-	-2950 12300 -2950 12650
-Wire Wire Line
-	-3900 11950 -3600 11950
-Wire Wire Line
-	-3950 11650 -3950 11300
-Wire Wire Line
-	-3950 10950 -3800 10950
-$Comp
 L Device:R R6
 U 1 1 5FAC06DA
 P 2300 6100
@@ -2165,17 +1692,6 @@ F 3 "~" H 1800 6650 50  0001 C CNN
 	1    1800 6650
 	-1   0    0    1   
 $EndComp
-Connection ~ -3600 11950
-Wire Wire Line
-	-3600 11950 -1700 11950
-Text Label -1700 11950 2    50   ~ 0
-CPU-CLK
-Text Label -1700 11800 2    50   ~ 0
-SYSTEM-CLK
-Text Label -1700 11650 2    50   ~ 0
-PPU-CLK
-Wire Wire Line
-	-1700 11650 -2150 11650
 Text Label 1250 6350 0    50   ~ 0
 SOUND-2
 Text Label 1250 6100 0    50   ~ 0
@@ -2503,10 +2019,10 @@ GND
 Text Label 7200 9800 3    50   ~ 0
 VCC
 $Comp
-L Device:C_Small C15
-U 1 1 64D2AA21
+L Device:C_Small C24
+U 1 1 64E75FD8
 P 7600 10250
-F 0 "C15" H 7750 10200 50  0000 C CNN
+F 0 "C24" H 7750 10200 50  0000 C CNN
 F 1 "10nF" H 7800 10300 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7600 10250 50  0001 C CNN
 F 3 "~" H 7600 10250 50  0001 C CNN
@@ -2520,14 +2036,14 @@ Wire Wire Line
 Text Label 7600 10700 1    50   ~ 0
 GND
 Text Label 7600 9800 3    50   ~ 0
-+9V
+VCC
 $Comp
-L Device:C_Small C19
-U 1 1 64DD0059
+L Device:C_Small C46
+U 1 1 64F1C4E7
 P 8000 10250
-F 0 "C19" H 8150 10200 50  0000 C CNN
-F 1 "10nF" H 8200 10300 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 8000 10250 50  0001 C CNN
+F 0 "C46" H 8150 10200 50  0000 C CNN
+F 1 "100nF" H 8200 10300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 8000 10250 50  0001 C CNN
 F 3 "~" H 8000 10250 50  0001 C CNN
 	1    8000 10250
 	-1   0    0    1   
@@ -2540,17 +2056,6 @@ Text Label 8000 10700 1    50   ~ 0
 GND
 Text Label 8000 9800 3    50   ~ 0
 VCC
-$Comp
-L Device:C_Small C24
-U 1 1 64E75FD8
-P 8400 10250
-F 0 "C24" H 8550 10200 50  0000 C CNN
-F 1 "10nF" H 8600 10300 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 8400 10250 50  0001 C CNN
-F 3 "~" H 8400 10250 50  0001 C CNN
-	1    8400 10250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	8400 10350 8400 10700
 Wire Wire Line
@@ -2560,12 +2065,23 @@ GND
 Text Label 8400 9800 3    50   ~ 0
 VCC
 $Comp
-L Device:C_Small C46
-U 1 1 64F1C4E7
+L Device:CP_Small C1
+U 1 1 652614AA
+P 8400 10250
+F 0 "C1" H 8250 10300 50  0000 C CNN
+F 1 "100uF" H 8200 10200 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 8400 10250 50  0001 C CNN
+F 3 "~" H 8400 10250 50  0001 C CNN
+	1    8400 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 65657CE7
 P 8800 10250
-F 0 "C46" H 8950 10200 50  0000 C CNN
-F 1 "100nF" H 9000 10300 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 8800 10250 50  0001 C CNN
+F 0 "C3" H 8950 10200 50  0000 C CNN
+F 1 "10nF" H 9000 10300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 8800 10250 50  0001 C CNN
 F 3 "~" H 8800 10250 50  0001 C CNN
 	1    8800 10250
 	-1   0    0    1   
@@ -2579,10 +2095,10 @@ GND
 Text Label 8800 9800 3    50   ~ 0
 VCC
 $Comp
-L Device:C_Small C16
-U 1 1 64FC33B3
+L Device:C_Small C12
+U 1 1 657A85FA
 P 9200 10250
-F 0 "C16" H 9350 10200 50  0000 C CNN
+F 0 "C12" H 9350 10200 50  0000 C CNN
 F 1 "10nF" H 9400 10300 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9200 10250 50  0001 C CNN
 F 3 "~" H 9200 10250 50  0001 C CNN
@@ -2596,110 +2112,7 @@ Wire Wire Line
 Text Label 9200 10700 1    50   ~ 0
 GND
 Text Label 9200 9800 3    50   ~ 0
-VCC
-Wire Wire Line
-	9600 10350 9600 10700
-Wire Wire Line
-	9600 9800 9600 10150
-Text Label 9600 10700 1    50   ~ 0
-GND
-Text Label 9600 9800 3    50   ~ 0
-VCC
-$Comp
-L Device:C_Small C2
-U 1 1 651B9B90
-P 10000 10250
-F 0 "C2" H 10150 10200 50  0000 C CNN
-F 1 "10nF" H 10200 10300 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 10000 10250 50  0001 C CNN
-F 3 "~" H 10000 10250 50  0001 C CNN
-	1    10000 10250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10000 10350 10000 10700
-Wire Wire Line
-	10000 9800 10000 10150
-Text Label 10000 10700 1    50   ~ 0
-GND
-Text Label 10000 9800 3    50   ~ 0
-VCC
-$Comp
-L Device:CP_Small C1
-U 1 1 652614AA
-P 9600 10250
-F 0 "C1" H 9450 10300 50  0000 C CNN
-F 1 "100uF" H 9400 10200 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9600 10250 50  0001 C CNN
-F 3 "~" H 9600 10250 50  0001 C CNN
-	1    9600 10250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 65657CE7
-P 10400 10250
-F 0 "C3" H 10550 10200 50  0000 C CNN
-F 1 "10nF" H 10600 10300 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 10400 10250 50  0001 C CNN
-F 3 "~" H 10400 10250 50  0001 C CNN
-	1    10400 10250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10400 10350 10400 10700
-Wire Wire Line
-	10400 9800 10400 10150
-Text Label 10400 10700 1    50   ~ 0
-GND
-Text Label 10400 9800 3    50   ~ 0
-VCC
-$Comp
-L Device:C_Small C10
-U 1 1 656FFD99
-P 10800 10250
-F 0 "C10" H 10950 10200 50  0000 C CNN
-F 1 "10nF" H 11000 10300 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 10800 10250 50  0001 C CNN
-F 3 "~" H 10800 10250 50  0001 C CNN
-	1    10800 10250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10800 10350 10800 10700
-Wire Wire Line
-	10800 9800 10800 10150
-Text Label 10800 10700 1    50   ~ 0
-GND
-Text Label 10800 9800 3    50   ~ 0
-VCC
-$Comp
-L Device:C_Small C12
-U 1 1 657A85FA
-P 11200 10250
-F 0 "C12" H 11350 10200 50  0000 C CNN
-F 1 "10nF" H 11400 10300 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 11200 10250 50  0001 C CNN
-F 3 "~" H 11200 10250 50  0001 C CNN
-	1    11200 10250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	11200 10350 11200 10700
-Wire Wire Line
-	11200 9800 11200 10150
-Text Label 11200 10700 1    50   ~ 0
-GND
-Text Label 11200 9800 3    50   ~ 0
 +9V
-Wire Wire Line
-	1000 3150 700  3150
-Wire Wire Line
-	1000 1450 700  1450
-Text Label 700  1450 0    50   ~ 0
-GND
-Text Label 700  3150 0    50   ~ 0
-GND
 Wire Wire Line
 	9850 6700 9450 6700
 Wire Wire Line
@@ -2795,15 +2208,6 @@ Wire Wire Line
 	4400 1250 5500 1250
 Wire Wire Line
 	4400 1250 4400 1950
-Wire Wire Line
-	-2500 11650 -2400 11650
-Wire Wire Line
-	-2400 11650 -2400 10600
-Wire Wire Line
-	-2400 10600 -2650 10600
-Connection ~ -2400 11650
-Wire Wire Line
-	-2400 11650 -2350 11650
 $Comp
 L Device:R R7
 U 1 1 5FB2C551
@@ -2816,32 +2220,6 @@ F 3 "~" H 2300 6350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 3200 6250
-Connection ~ -2950 11650
-$Comp
-L Device:Q_NPN_ECB Q2
-U 1 1 5D9AB2F6
-P -2750 10950
-F 0 "Q2" H -2560 10996 50  0000 L CNN
-F 1 "2SC2021" H -2560 10905 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H -2550 11050 50  0001 C CNN
-F 3 "~" H -2750 10950 50  0001 C CNN
-	1    -2750 10950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	-1700 11800 -4350 11800
-Wire Wire Line
-	-4350 11800 -4350 11150
-Wire Wire Line
-	-4350 11800 -4350 11950
-Connection ~ -4350 11800
-Wire Wire Line
-	-4350 11950 -4350 12050
-Connection ~ -4350 11950
-Wire Wire Line
-	-4100 11950 -4350 11950
-Wire Wire Line
-	-2950 10950 -2950 11650
 Text Label 7500 6200 2    50   ~ 0
 SYS-CLK
 Wire Wire Line
