@@ -2,14 +2,14 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 5)
     (tracks 0)
     (zones 0)
     (modules 0)
     (nets 1)
   )
 
-  (page A4)
+  (page A)
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -104,5 +104,11 @@
     (uvia_dia 0.3)
     (uvia_drill 0.1)
   )
+
+  (gr_line (start 132.87 184.79) (end 34.15 184.79) (layer Edge.Cuts) (width 0.05) (tstamp 5F9CA266))
+  (gr_line (start 140.2 177.76) (end 140.2 29.79) (layer Edge.Cuts) (width 0.05) (tstamp 5F9CA265))
+  (gr_line (start 140.2 177.76) (end 132.87 184.79) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 34.15 29.79) (end 140.2 29.79) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 34.15 29.79) (end 34.15 184.79) (layer Edge.Cuts) (width 0.05))
 
 )
