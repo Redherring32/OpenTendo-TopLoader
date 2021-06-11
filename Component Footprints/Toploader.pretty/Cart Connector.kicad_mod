@@ -1,4 +1,4 @@
-(module "Cart Connector" (layer F.Cu) (tedit 60AD4CE6)
+(module "Cart Connector" (layer F.Cu) (tedit 60C2E952)
   (fp_text reference " " (at 3.602 -6.871) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -99,4 +99,6 @@
   (pad 70 thru_hole circle (at 82.5 0) (size 1.6 1.6) (drill 1.1) (layers *.Cu *.Mask))
   (pad 71 thru_hole circle (at 85 0) (size 1.6 1.6) (drill 1.1) (layers *.Cu *.Mask))
   (pad 72 thru_hole circle (at 87.5 0) (size 1.6 1.6) (drill 1.1) (layers *.Cu *.Mask))
+  (pad 73 thru_hole oval (at -4.25 -2.5) (size 2.5 5.25) (drill oval 2.25 5) (layers *.Cu *.Mask))
+  (pad 73 thru_hole oval (at 91.5 -2.5) (size 2.5 5.25) (drill oval 2.25 5) (layers *.Cu *.Mask))
 )
