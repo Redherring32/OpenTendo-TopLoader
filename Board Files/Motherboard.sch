@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Motherboard-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -765,10 +764,6 @@ F 3 "" H 13900 3950 50  0001 C CNN
 $EndComp
 Text Label 12950 1150 0    50   ~ 0
 VCC
-Text Label 12950 1250 0    50   ~ 0
-CIC-TO-MB
-Text Label 12950 1350 0    50   ~ 0
-CIC-TO-CART
 Text Label 12950 1450 0    50   ~ 0
 PPU-D3
 Text Label 12950 1550 0    50   ~ 0
@@ -901,18 +896,10 @@ Text Label 15450 1550 2    50   ~ 0
 PPU-D5
 Text Label 15450 1450 2    50   ~ 0
 PPU-D4
-Text Label 15450 1350 2    50   ~ 0
-CIC-RST
-Text Label 15450 1250 2    50   ~ 0
-PPU-D4
 Text Label 15450 1150 2    50   ~ 0
 GND
 Wire Wire Line
 	12950 1150 13550 1150
-Wire Wire Line
-	13550 1250 12950 1250
-Wire Wire Line
-	12950 1350 13550 1350
 Wire Wire Line
 	13550 1450 12950 1450
 Wire Wire Line
@@ -1045,10 +1032,6 @@ Wire Wire Line
 	15450 1550 14850 1550
 Wire Wire Line
 	14850 1450 15450 1450
-Wire Wire Line
-	15450 1350 14850 1350
-Wire Wire Line
-	15450 1250 14850 1250
 Wire Wire Line
 	15450 1150 14850 1150
 $Comp
@@ -1406,7 +1389,7 @@ CPU-D1
 Text Label 8300 1500 2    50   ~ 0
 VCC
 Text Label 8300 1600 2    50   ~ 0
-CPU-D4
+CPU-D2
 Text Label 8300 1800 2    50   ~ 0
 CPU-D1
 Wire Wire Line
@@ -1657,7 +1640,7 @@ Wire Wire Line
 	2100 10050 2100 10400
 Text Label 2100 10950 1    50   ~ 0
 GND
-Text Label 2100 10000 3    50   ~ 0
+Text Label 2100 10050 3    50   ~ 0
 VCC
 Wire Wire Line
 	900  10600 900  10950
@@ -1788,7 +1771,7 @@ F 1 "330pF" H 4858 6855 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4950 6900 50  0001 C CNN
 F 3 "~" H 4950 6900 50  0001 C CNN
 	1    4950 6900
-	-1   0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6450 6200 6450 6350
@@ -1834,7 +1817,7 @@ F 1 "1.2K" H 6380 6005 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6380 6050 50  0001 C CNN
 F 3 "~" H 6450 6050 50  0001 C CNN
 	1    6450 6050
-	-1   0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6450 7350 6100 7350
@@ -1885,32 +1868,8 @@ F 3 "~" H 5700 6200 50  0001 C CNN
 	1    5700 6200
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:C_Variable TC1
-U 1 1 60BE00F8
-P 5200 6200
-F 0 "TC1" V 5452 6200 50  0000 C CNN
-F 1 "30pF" V 5361 6200 50  0000 C CNN
-F 2 "Toploader:TrimmerCap-THT" H 5200 6200 50  0001 C CNN
-F 3 "~" H 5200 6200 50  0001 C CNN
-	1    5200 6200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C_Small C9
-U 1 1 5D9A90F1
-P 5200 6600
-F 0 "C9" V 5429 6600 50  0000 C CNN
-F 1 "10pF" V 5338 6600 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5200 6600 50  0001 C CNN
-F 3 "~" H 5200 6600 50  0001 C CNN
-	1    5200 6600
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	5050 6200 4950 6200
-Wire Wire Line
-	5300 6600 5450 6600
 Wire Wire Line
 	5450 6600 5450 6200
 Wire Wire Line
@@ -1945,17 +1904,6 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Bridge_+-AA DB1
-U 1 1 60BE0117
-P 14000 6050
-F 0 "DB1" H 13900 6550 50  0000 L TNN
-F 1 "RC203" H 13850 6450 50  0000 L CNN
-F 2 "Toploader:Rectifier" H 14000 6050 50  0001 C CNN
-F 3 "~" H 14000 6050 50  0001 C CNN
-	1    14000 6050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C13
 U 1 1 60C4FE5C
 P 14300 6250
@@ -1978,17 +1926,6 @@ F 3 "~" H 15600 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L_Coupled T1
-U 1 1 60C4FE5E
-P 13200 6050
-F 0 "T1" H 13200 6331 50  0000 C CNN
-F 1 "08RB01" H 13200 6240 50  0000 C CNN
-F 2 "Toploader:Inductor" H 13200 6050 50  0001 C CNN
-F 3 "~" H 13200 6050 50  0001 C CNN
-	1    13200 6050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Motherboard:PowerSwitch P2
 U 1 1 5FDB2A22
 P 16200 5850
@@ -2000,24 +1937,17 @@ F 3 "" H 14550 5925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13700 6500 13700 6050
-Wire Wire Line
 	14300 6050 14450 6050
 Wire Wire Line
 	14300 6100 14300 6050
-Connection ~ 14300 6050
 Wire Wire Line
 	14300 6400 14300 6500
 Connection ~ 14300 6500
-Wire Wire Line
-	14300 6500 13700 6500
 Wire Wire Line
 	14300 6500 14700 6500
 Wire Wire Line
 	14700 6250 14700 6500
 Connection ~ 14700 6500
-Wire Wire Line
-	14700 6500 15200 6500
 Text Label 15750 6050 2    50   ~ 0
 VCC
 Wire Wire Line
@@ -2036,39 +1966,6 @@ Wire Wire Line
 Wire Wire Line
 	15600 6050 15750 6050
 Connection ~ 15600 6050
-$Comp
-L Device:C C12
-U 1 1 60BE0129
-P 13500 6050
-F 0 "C12" H 13500 6250 50  0000 L CNN
-F 1 "10nF" H 13500 6150 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 13538 5900 50  0001 C CNN
-F 3 "~" H 13500 6050 50  0001 C CNN
-	1    13500 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13500 5900 13500 5750
-Wire Wire Line
-	13500 6200 13500 6350
-Wire Wire Line
-	13400 5750 13400 5950
-Wire Wire Line
-	13400 6350 13400 6150
-Wire Wire Line
-	13400 6350 13500 6350
-Wire Wire Line
-	13400 5750 13500 5750
-Connection ~ 13500 5750
-Connection ~ 13500 6350
-Wire Wire Line
-	13500 5750 14000 5750
-Wire Wire Line
-	13500 6350 14000 6350
-Text Label 13700 6750 1    50   ~ 0
-GND
-Wire Wire Line
-	13700 6500 13700 6750
 $Comp
 L Motherboard:ResetSwitch P3
 U 1 1 60BE0123
@@ -2106,7 +2003,7 @@ Wire Wire Line
 	14450 7850 14250 7850
 Connection ~ 14450 7850
 Text Label 15250 7850 2    50   ~ 0
-RST
+~RST
 Text Label 14250 7850 0    50   ~ 0
 GND
 Wire Wire Line
@@ -2350,7 +2247,7 @@ F 1 "100" V 3150 6750 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2980 6950 50  0001 C CNN
 F 3 "~" H 3050 6950 50  0001 C CNN
 	1    3050 6950
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3950 7050 3950 7400
@@ -2448,14 +2345,14 @@ F 1 "200" V 3150 6500 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2980 6700 50  0001 C CNN
 F 3 "~" H 3050 6700 50  0001 C CNN
 	1    3050 6700
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5D802682
 P 10000 8800
-F 0 "R2" H 10070 8846 50  0000 L CNN
-F 1 "430" H 10070 8755 50  0000 L CNN
+F 0 "R2" H 9850 8850 50  0000 L CNN
+F 1 "430" H 9800 8750 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9930 8800 50  0001 C CNN
 F 3 "~" H 10000 8800 50  0001 C CNN
 	1    10000 8800
@@ -2476,12 +2373,12 @@ $Comp
 L Device:L_Core_Ferrite FC2
 U 1 1 5D802DEF
 P 10550 8550
-F 0 "FC2" V 10400 8550 50  0000 C CNN
+F 0 "FC2" V 10700 8550 50  0000 C CNN
 F 1 "Ferrite_Coil" V 10500 8550 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 10550 8550 50  0001 C CNN
 F 3 "~" H 10550 8550 50  0001 C CNN
 	1    10550 8550
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	10700 8550 10850 8550
@@ -2508,21 +2405,18 @@ Connection ~ 10850 8550
 $Comp
 L Device:R R3
 U 1 1 610DA81B
-P 10000 8300
-F 0 "R3" H 10070 8346 50  0000 L CNN
-F 1 "150" H 10070 8255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9930 8300 50  0001 C CNN
-F 3 "~" H 10000 8300 50  0001 C CNN
-	1    10000 8300
-	1    0    0    -1  
+P 10250 8800
+F 0 "R3" H 10300 8750 50  0000 L CNN
+F 1 "150" H 10300 8850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10180 8800 50  0001 C CNN
+F 3 "~" H 10250 8800 50  0001 C CNN
+	1    10250 8800
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	10000 8650 10000 8550
 Wire Wire Line
-	10000 8550 10400 8550
-Connection ~ 10000 8550
-Wire Wire Line
-	10000 8550 10000 8450
+	10000 8550 10250 8550
 $Comp
 L Motherboard:RF-Mod P6
 U 1 1 60F137EC
@@ -2556,18 +2450,6 @@ Wire Wire Line
 	1150 3900 1400 3900
 Wire Wire Line
 	1150 2200 1400 2200
-$Comp
-L Connector:Jack-DC ACPLUG1
-U 1 1 60C4FE5D
-P 12700 6050
-F 0 "ACPLUG1" H 12700 6300 50  0000 C CNN
-F 1 " " H 12757 6284 50  0000 C CNN
-F 2 "Toploader:AC-JACK" H 12750 6010 50  0001 C CNN
-F 3 "~" H 12750 6010 50  0001 C CNN
-	1    12700 6050
-	1    0    0    -1  
-$EndComp
-Connection ~ 13700 6500
 $Comp
 L Device:C_Small C5
 U 1 1 60BE0101
@@ -2717,23 +2599,15 @@ Text Label 9750 8450 3    50   ~ 0
 VCC
 Wire Wire Line
 	9750 8450 9750 8650
-Wire Wire Line
-	10000 8150 10000 8100
-Wire Wire Line
-	10000 8100 11300 8100
-Wire Wire Line
-	11300 9400 10850 9400
 Connection ~ 10850 9400
 Wire Wire Line
 	10850 9400 10850 9600
 Wire Wire Line
-	10850 9400 10000 9400
+	10850 9400 10250 9400
 Wire Wire Line
 	10000 9400 10000 9350
 Wire Wire Line
 	10850 8950 10850 9400
-Wire Wire Line
-	11300 8100 11300 9400
 Text Label 6000 10050 3    50   ~ 0
 VCC
 Text Label 6000 10950 1    50   ~ 0
@@ -2772,4 +2646,132 @@ Text Label 1700 10950 1    50   ~ 0
 GND
 Text Label 1700 10050 3    50   ~ 0
 VCC
+Wire Wire Line
+	5300 6600 5450 6600
+$Comp
+L Device:C_Small C9
+U 1 1 5D9A90F1
+P 5200 6600
+F 0 "C9" V 5429 6600 50  0000 C CNN
+F 1 "10pF" V 5338 6600 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5200 6600 50  0001 C CNN
+F 3 "~" H 5200 6600 50  0001 C CNN
+	1    5200 6600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Variable TC1
+U 1 1 60BE00F8
+P 5200 6200
+F 0 "TC1" V 4950 6200 50  0000 C CNN
+F 1 "30pF" V 5050 6200 50  0000 C CNN
+F 2 "Toploader:TrimmerCap-THT" H 5200 6200 50  0001 C CNN
+F 3 "~" H 5200 6200 50  0001 C CNN
+	1    5200 6200
+	0    1    1    0   
+$EndComp
+Text Label 15450 1350 2    50   ~ 0
+VCC
+Wire Wire Line
+	14850 1350 15450 1350
+Text Label 15450 1250 2    50   ~ 0
+PPU-D4
+Wire Wire Line
+	14850 1250 15450 1250
+Wire Wire Line
+	14700 6500 15200 6500
+Wire Wire Line
+	13700 6500 13700 6750
+Text Label 13700 6750 1    50   ~ 0
+GND
+Wire Wire Line
+	14300 6500 13700 6500
+$Comp
+L Device:C C12
+U 1 1 60BE0129
+P 12900 6050
+F 0 "C12" H 12850 6300 50  0000 L CNN
+F 1 "10nF" H 12800 6400 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 12938 5900 50  0001 C CNN
+F 3 "~" H 12900 6050 50  0001 C CNN
+	1    12900 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12900 5900 12800 5900
+Connection ~ 12900 5900
+Wire Wire Line
+	12800 5900 12800 5950
+Wire Wire Line
+	13000 5900 12900 5900
+Wire Wire Line
+	13000 5950 13000 5900
+Connection ~ 12900 6200
+Wire Wire Line
+	13000 6200 13000 6150
+Wire Wire Line
+	12900 6200 13000 6200
+Wire Wire Line
+	12800 6200 12800 6150
+Wire Wire Line
+	12900 6200 12800 6200
+$Comp
+L Device:L_Coupled T1
+U 1 1 60C4FE5E
+P 13200 6050
+F 0 "T1" H 13200 6331 50  0000 C CNN
+F 1 "08RB01" H 13200 6240 50  0000 C CNN
+F 2 "Toploader:Inductor" H 13200 6050 50  0001 C CNN
+F 3 "~" H 13200 6050 50  0001 C CNN
+	1    13200 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 6150 13600 6150
+Wire Wire Line
+	13400 5950 13600 5950
+Wire Wire Line
+	13600 5950 13600 5750
+Wire Wire Line
+	13600 5750 14000 5750
+Wire Wire Line
+	13600 6150 13600 6350
+Wire Wire Line
+	13600 6350 14000 6350
+Connection ~ 13700 6500
+Wire Wire Line
+	13700 6500 13700 6050
+Connection ~ 14300 6050
+$Comp
+L Device:D_Bridge_+-AA DB1
+U 1 1 60BE0117
+P 14000 6050
+F 0 "DB1" H 13900 6550 50  0000 L TNN
+F 1 "RC203" H 13850 6450 50  0000 L CNN
+F 2 "Toploader:Rectifier" H 14000 6050 50  0001 C CNN
+F 3 "~" H 14000 6050 50  0001 C CNN
+	1    14000 6050
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Jack-DC ACPLUG1
+U 1 1 60C4FE5D
+P 12500 6050
+F 0 "ACPLUG1" H 12500 6300 50  0000 C CNN
+F 1 " " H 12557 6284 50  0000 C CNN
+F 2 "Toploader:AC-JACK" H 12550 6010 50  0001 C CNN
+F 3 "~" H 12550 6010 50  0001 C CNN
+	1    12500 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 8650 10250 8550
+Connection ~ 10250 8550
+Wire Wire Line
+	10250 8550 10400 8550
+Wire Wire Line
+	10250 8950 10250 9400
+Connection ~ 10250 9400
+Wire Wire Line
+	10250 9400 10000 9400
 $EndSCHEMATC
