@@ -1,4 +1,4 @@
-update=1/10/2023 7:11:28 PM
+update=01/14/23 00:24:59
 version=1
 last_client=kicad
 [general]
@@ -65,8 +65,8 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0.051
-SolderMaskMinWidth=0.155
+SolderMaskClearance=0
+SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
@@ -261,7 +261,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=C:/Users/Redherring32/Desktop/
+PlotDirectoryName=../OT-Toploader_TestRelease/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
