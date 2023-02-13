@@ -28,7 +28,9 @@ The files required to order PCBs can be found under releases.
 
 * And any color you want!
 
-![Board Front]()
+![Board Front](https://i.imgur.com/8I6G4BM.jpeg)
+
+Image credit: 1UpRestorations
 
 The design is 1:1 with the OEM board, everything is exactly as it was on the OEM board with hopefully no exceptions, this project does not include "improvements"
 
