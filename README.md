@@ -30,7 +30,7 @@ The files required to order PCBs can be found under releases.
 
 ![Board Front]()
 
-The design is 1:1 with the OEM board, everything is excatly as it was on the OEM board with hopefully no exceptions, if any differemces exist please file an issue. :)
+The design is 1:1 with the OEM board, everything is exactly as it was on the OEM board with hopefully no exceptions, this project does not include "improvements"
 
 Since this project is open-source you may do as you like with it, whether that is to make boards for personal use, sell replacement NES boards, or to use the provided info for further custom PCB work/designs.
 
@@ -43,6 +43,8 @@ These are the only two chips that are custom and have no direct replacement, the
 
 *[2]There is an aftermarket PPU that can be used; the part number is UA6528 (NTSC) or UA6528P (PAL), and it is available on Aliexpress.
 While it works as a drop-in replacement, it isn't known whether it is compatible with all NES games.
+
+Please read the release page for notes on any parts that must be harvested, or otherwise obtained separately from the BOM.
 
 
 ## License:
