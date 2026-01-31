@@ -43,7 +43,7 @@ These are the only two chips that are custom and have no direct replacement, the
 
 *[1]There is an aftermarket CPU, the part number is UA6527 (NTSC) or UA6527P (PAL), however they are known to have different sounding audio due to swapped duty cycles, as such they aren't a 100% identical substitute, they otherwise work though.
 
-*[2]There is an aftermarket PPU that can be used; the part number is UA6528 (NTSC) or UA6528P (PAL), and it is available on Aliexpress.
+*[2]There is an aftermarket PPU that can be used; the part number is UA6528 (NTSC) or UA6538 (PAL), and it is available on Aliexpress.
 While it works as a drop-in replacement, it isn't known whether it is compatible with all NES games.
 
 Please read the release page for notes on any parts that must be harvested, or otherwise obtained separately from the BOM.
